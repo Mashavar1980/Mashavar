@@ -1,4 +1,4 @@
-const { RATES } = require('./exchangeRates');
+const RATES = Object.freeze({ USD: 1, EUR: 0.92, RUB: 90, GBP: 0.79, CNY: 7.2, JPY: 150 });
 const { normalizeCurrency, validateAmount } = require('./utils/validation');
 
 class CurrencyConverter {
@@ -23,7 +23,10 @@ class CurrencyConverter {
     // Возвращаем копии: вызывающий код не сможет изменить записи истории.
     return this.history.map(record => ({ ...record }));
   }
-
+  getLastConversion() {
+    const last = this.history.at(-1);
+    return last ? { ...last } : null;
+  }
   clearHistory() { this.history = []; }
 }
 module.exports = { CurrencyConverter };
