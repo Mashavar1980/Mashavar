@@ -1,1 +1,1 @@
-History mode: basic
+History mode: compact
