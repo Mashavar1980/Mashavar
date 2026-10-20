@@ -14,3 +14,5 @@ npm run build
 
 Полный порядок выполнения: [START_HERE.md](START_HERE.md).
 Объяснение проекта и ответы: [docs/variant-3-readme.md](docs/variant-3-readme.md).
+
+Educational rates are fixed; they are not live quotes.
