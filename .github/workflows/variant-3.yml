@@ -1,0 +1,24 @@
+name: Currency checks - Variant 3
+on:
+  push:
+    branches: [main, develop, 'feature/**', 'hotfix/**']
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  currency-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          cache: npm
+      - run: npm ci
+      # Фиксированные курсы допустимы по заданию, сеть/API не используются.
+      # Выбираем реальный tests/converter.test.js, а не несуществующий currency.
+      - run: npm run test:currency
+        env:
+          MOCK_API: 'true'
