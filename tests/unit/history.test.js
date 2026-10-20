@@ -8,6 +8,16 @@ describe('Conversion history', () => {
     expect(history).toHaveLength(2);
     expect(history[0]).toMatchObject({ amount: 100, from: 'USD', to: 'RUB', result: 9000 });
     expect(Number.isNaN(Date.parse(history[0].date))).toBe(false);
+    test('returns the last conversion or null', () => {
+  const converter = new CurrencyConverter();
+  expect(converter.getLastConversion()).toBeNull();
+  converter.convert(1, 'USD', 'EUR');
+  converter.convert(2, 'USD', 'RUB');
+  const last = converter.getLastConversion();
+  expect(last.result).toBe(180);
+  last.result = 0;
+  expect(converter.getLastConversion().result).toBe(180);
+});
   });
   test('returns copies and supports clearing', () => {
     const converter = new CurrencyConverter();
