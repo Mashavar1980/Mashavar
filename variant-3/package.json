@@ -1,0 +1,42 @@
+{
+  "name": "git-cicd-lab-variant-3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Учебный конвертер валют, вариант 3",
+  "main": "src/app.js",
+  "engines": {
+    "node": "^22.13.0 || >=24"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest --runInBand",
+    "test:coverage": "jest --runInBand --coverage",
+    "test:watch": "jest --watch",
+    "test:currency": "jest --runInBand --runTestsByPath tests/converter.test.js",
+    "lint": "eslint src tests scripts",
+    "build": "node scripts/build.js",
+    "audit": "npm audit --audit-level=moderate"
+  },
+  "devDependencies": {
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "jest": "^30.5.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ]
+  },
+  "overrides": {
+    "@istanbuljs/load-nyc-config": {
+      "js-yaml": "^4.1.1"
+    }
+  }
+}
