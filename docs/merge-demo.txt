@@ -1,1 +1,1 @@
-History mode: compact
+History mode: compact output with detailed records
