@@ -1,0 +1,62 @@
+[33mcommit 0535d382c733c21d3fa2a54e1b7242ac2844ee79[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 5f2bdf0 3a3a0fa
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:40:58 2026 +0300
+
+    Resolve history description merge conflict
+
+[33mcommit 5f2bdf0aef2d13f216319434ee28c4c7cac96896[m
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:34:29 2026 +0300
+
+    Describe compact history
+
+[33mcommit 3a3a0fab3dfd06254137e5db8932373f5ca0b236[m[33m ([m[1;32mfeature/history-description[m[33m)[m
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:34:12 2026 +0300
+
+    Describe detailed history
+
+[33mcommit 3274afb4c41069da2c5460340a337c46a9348608[m
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:33:53 2026 +0300
+
+    Add merge conflict exercise
+
+[33mcommit bb120429daf9cd2c93ac9c79e3724fd646d0ab80[m
+Merge: 5fb21a1 b45d72c
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:33:06 2026 +0300
+
+    Merge conversion history feature
+
+[33mcommit b45d72c973d9b8ebd8fbc63422ce5959ff4e7aa1[m[33m ([m[1;32mfeature/conversion-history[m[33m)[m
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:31:55 2026 +0300
+
+    Document test command
+
+[33mcommit 18636353953d57808ce24313034aee567e6d100b[m
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:31:14 2026 +0300
+
+    Add last conversion lookup with test
+
+[33mcommit 5fb21a14255e7615a72a55a99415f1ee79a47f86[m
+Merge: 371bbfa 375ae7e
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:26:39 2026 +0300
+
+    Merge README hotfix
+
+[33mcommit 375ae7e5885988e6311ea70a387e911eb37395b8[m[33m ([m[1;32mhotfix/readme-update[m[33m)[m
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:26:30 2026 +0300
+
+    Clarify fixed educational rates
+
+[33mcommit 371bbfafdec3773d6aa195b64807b9c84fc53491[m[33m ([m[1;32mfeature/currency-rates[m[33m)[m
+Author: [1;31mMasha[m/Artem <warkamas3326@gmail.com>
+Date:   Tue Oct 20 17:19:42 2026 +0300
+
+    Initial commit: currency converter and CI/CD
